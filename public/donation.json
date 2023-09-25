@@ -46,8 +46,8 @@
     {
       "id": 5,
       "image":"https://i.ibb.co/41j8dL4/Rectangle-4287.png",
-    
-      "title": "Clothing Donation 1",
+      "category": "Clothing",
+      
       "title": "Donate clothes to keep someone warm.",
       "price": 39.99,
       "titleColor": "#D95A5A",

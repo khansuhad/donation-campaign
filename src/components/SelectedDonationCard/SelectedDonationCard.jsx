@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const SelectedDonationCard = ({card}) => {
-    console.log(card)
+    // console.log(card)
     const {id , title, image,cardBackgroundColor,titleBackgroundColor,titleColor,price,category} = card;
     return (
         <div className="flex rounded gap-5" style={{backgroundColor:cardBackgroundColor}}>
