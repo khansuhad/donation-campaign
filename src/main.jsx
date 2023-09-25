@@ -9,6 +9,7 @@ import Main from './components/Main/Main'
 import Home from './components/Home/Home'
 import HomeDonationCard from './components/HomeDonationCard/HomeDonationCard'
 import DonationCardDetails from './components/DonationCardDetails/DonationCardDetails'
+import SelectedDonationCards from './components/SelectedDonationCards/SelectedDonationCards'
 
 const router = createBrowserRouter([
 
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/donation',
-        element:<Donation></Donation>
+        element:<SelectedDonationCards></SelectedDonationCards>
       },
       {
         path:'/statistics',

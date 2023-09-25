@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import SelectedDonationCard from "../SelectedDonationCard/SelectedDonationCard";
 
 const DonationCardDetails = () => {
     const dataLoad = useLoaderData();
-    console.log(dataLoad)
+    // console.log(dataLoad)
     const id = useParams();
-    console.log(id.donationId);
+    // console.log(id.donationId);
     const [data, setData] = useState();
     useEffect(() => {
        const donationData = dataLoad?.find(item => item?.id === Number(id?.donationId));
@@ -23,7 +24,8 @@ const DonationCardDetails = () => {
             alert("Good job!", "Successfully add to favorite", "success");
         }
         else{
-            const have = donationItem.find(e=> e.id === Number(data?.donationId))
+            const have = donationItem.find(e=>{
+                e.id === Number(data?.donationId)} )
             if(!have){
                 addedDonationArray.push(...donationItem, data)
                 localStorage.setItem("donation", JSON.stringify(addedDonationArray))
@@ -46,6 +48,7 @@ const DonationCardDetails = () => {
          </figure>
          <div>
             <h1 className="font-bold text-3xl">{data?.title}</h1>
+            
          </div>
         </div>
     );

@@ -1,21 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SelectedDonationCard from "../SelectedDonationCard/SelectedDonationCard";
 
 const SelectedDonationCards = () => {
     const [donationCard, setDonationCard] = useState();
     useEffect(()=>{
-        const doantionItem = JSON.parse(localStorage.getItem('donation'))
-
-        if(doantionItem){
-            setFavorites(doantionItem)
+        const donationItem = JSON.parse(localStorage.getItem('donation'));
+        console.log(donationItem);
+        if(donationItem){
+            setDonationCard(donationItem)
         }
         
     },[])
+    console.log(donationCard);
+    console.log('suhad')
     return (
         <div>
-               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
+               <div className="grid grid-cols-1  lg:grid-cols-2 gap-5 px-[10%] pb-10">
                         {
-                            donationCard?.map((card,idx)=> <SelectedDonationCard key={idx} card={card}></SelectedDonationCard>
+                            donationCard?.map((card,i)=> <SelectedDonationCard key={i} card={card}></SelectedDonationCard>
                                
                             )
                         }
