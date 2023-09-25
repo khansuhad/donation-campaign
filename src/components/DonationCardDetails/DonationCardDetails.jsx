@@ -14,29 +14,34 @@ const DonationCardDetails = () => {
     },[id,dataLoad]);
     // console.log(data?.titleColor)
     const donateColor = data?.titleColor ;
-
+    
+    
     const handleAddToDonation = () => {
         const addedDonationArray = [];
         const donationItem = JSON.parse(localStorage.getItem("donation"));
+        
         if(!donationItem){
             addedDonationArray.push(data);
             localStorage.setItem("donation", JSON.stringify(addedDonationArray));
             alert("Good job!", "Successfully add to favorite", "success");
         }
         else{
-            const have = donationItem.find(e=>{
-                e.id === Number(data?.donationId)} )
+        
+            const have = donationItem.find(e => e.id === data?.id );
+            
             if(!have){
                 addedDonationArray.push(...donationItem, data)
                 localStorage.setItem("donation", JSON.stringify(addedDonationArray))
-                alert("Good job!", "Successfully add to favorite", "success");
+                alert("dukse job!", "Successfully add to favorite", "success");
+                
             }
             else{
                 alert("Error!", "Already added", "error");
             }
         }
+        
     }
-
+   
     return (
         <div className=" px-[10%] py-10  ">
          <figure className="w-full h-full image-overlay-container">

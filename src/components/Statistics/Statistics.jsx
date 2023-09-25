@@ -29,8 +29,8 @@ const Statistics = () => {
         datasets: [
           {
             data: [donationPercentage, 100 - donationPercentage ],
-            backgroundColor: ["#FF6384", "#36A2EB"],
-            hoverBackgroundColor: ["#FF6384", "#36A2EB"],
+            backgroundColor: ["#00C49F", "#FF444A"],
+            hoverBackgroundColor: ["#00C49F", "#FF444A"],
           },
         ],
       };
