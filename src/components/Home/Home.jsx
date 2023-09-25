@@ -1,22 +1,16 @@
 import { useLoaderData } from "react-router-dom";
 import HomeDonationCard from "../HomeDonationCard/HomeDonationCard";
+import { useEffect } from "react";
 
 const Home = () => {
    const donationdata = useLoaderData();
+
+  
+     
   
     return (
         <div>
-            {/* <div className="">
-                <h1 className="text-[#0B0B0B] font-bold text-5xl my-10">I Grow By Helping People In Need</h1>
-                <div className="items-center flex justify-center">
-                <div class="form-control">
-  <div class="input-group ">
-    <input type="text" placeholder="Search here...." class="input input-bordered " />
-    <button class="btn  p-4 bg-[#FF444A] text-white" className="p-4">Search</button>
-  </div>
-</div>
-                </div>
-            </div> */}
+          
             <div className=" flex flex-col justify-center items-center text-center py-40 mb-20">
                 <div>
                 <h1 className="text-[#0B0B0B] font-bold text-5xl my-10">I Grow By Helping People In Need</h1>
