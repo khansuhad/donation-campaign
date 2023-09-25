@@ -5,7 +5,7 @@ const HomeDonationCard = ({ donationData }) => {
     id,
     image,
     title,
-    catagory,
+    category,
     description,
     price,
     titleColor,
@@ -16,14 +16,14 @@ const HomeDonationCard = ({ donationData }) => {
   return (
   
    <Link to={`/${id}`}
-        className={`card card-compact shadow-xl bg-red-200`}
+        className={`card shadow-xl mb-10 `} style={{backgroundColor:cardBackgroundColor}}
       >
-        <figure >
-          <img src={image} alt="Shoes" />
+        <figure className="h-52 p-5">
+          <img src={image} alt="Shoes" className="w-full  h-full" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title bg-red-300 rounded text-red-500 font-semibold p-3">{title}</h2>
-          <p className="text-red-500 font-semibold">{description}</p>
+          <span className="card-title  rounded font-semibold p-2 w-fit" style={{backgroundColor:titleBackgroundColor, color:titleColor}}>{category}</span>
+          <p className="text-red-500 text-xl font-semibold" style={{color:titleColor}}>{title}</p>
         </div>
       </Link>
    

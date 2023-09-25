@@ -28,15 +28,16 @@ const router = createBrowserRouter([
       {
         path:'/statistics',
         element:<Statistics></Statistics>
+      },
+      {
+        path:'/:donationId',
+        loader:() => fetch('donation.json'),
+        element:<DonationCardDetails></DonationCardDetails>
       }
     ]
   
   },
-  {
-    path:'/:donationId',
-    loader:() => fetch('donation.json'),
-    element:<DonationCardDetails></DonationCardDetails>
-  }
+  
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

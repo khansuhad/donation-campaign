@@ -3,8 +3,8 @@
       "id": 1,
       "category": "Health",
       "image":"https://i.ibb.co/frN1jYh/Rectangle-4284.png",
-      "title": "Health Donation 1",
-      "description": "Help provide healthcare to those in need.",
+
+      "title": "Help provide healthcare to those in need.",
       "price": 19.99,
       "titleColor": "#FF5733",
       "titleBackgroundColor": "#FEDCBA",
@@ -14,8 +14,8 @@
       "id": 2,
       "category": "Health",
       "image":"https://i.ibb.co/frN1jYh/Rectangle-4284.png",
-      "title": "Health Donation 2",
-      "description": "Support medical research for a better future.",
+  
+      "title": "Support medical research for a better future.",
       "price": 24.99,
       "titleColor": "#45AAB8",
       "titleBackgroundColor": "#C7F0DB",
@@ -25,8 +25,8 @@
       "id": 3,
       "category": "Education",
       "image":"https://i.ibb.co/gr5bFgf/Rectangle-4287-1.png",
-      "title": "Education Donation 1",
-      "description": "Empower the next generation through education.",
+     
+      "title": "Empower the next generation through education.",
       "price": 29.99,
       "titleColor": "#C14A8B",
       "titleBackgroundColor": "#F4B0A6",
@@ -36,8 +36,8 @@
       "id": 4,
       "category": "Education",
       "image":"https://i.ibb.co/gr5bFgf/Rectangle-4287-1.png",
-      "title": "Education Donation 2",
-      "description": "Provide scholarships for deserving students.",
+     
+      "title": "Provide scholarships for deserving students.",
       "price": 49.99,
       "titleColor": "#357ABD",
       "titleBackgroundColor": "#A2CFFE",
@@ -46,9 +46,9 @@
     {
       "id": 5,
       "image":"https://i.ibb.co/41j8dL4/Rectangle-4287.png",
-      "category": "Clothing",
+    
       "title": "Clothing Donation 1",
-      "description": "Donate clothes to keep someone warm.",
+      "title": "Donate clothes to keep someone warm.",
       "price": 39.99,
       "titleColor": "#D95A5A",
       "titleBackgroundColor": "#FFB5B5",
@@ -58,8 +58,8 @@
       "id": 6,
       "category": "Clothing",
       "image":"https://i.ibb.co/41j8dL4/Rectangle-4287.png",
-      "title": "Clothing Donation 2",
-      "description": "Support shelters for the homeless.",
+     
+      "title": "Support shelters for the homeless.",
       "price": 59.99,
       "titleColor": "#5E7A6F",
       "titleBackgroundColor": "#A7C4B4",
@@ -69,8 +69,8 @@
       "id": 7,
       "category": "Food",
       "image":"https://i.ibb.co/8bq7RZZ/Rectangle-4287-2.png",
-      "title": "Food Donation 1",
-      "description": "Help provide meals for the hungry.",
+
+      "title": "Help provide meals for the hungry.",
       "price": 12.99,
       "titleColor": "#FF9000",
       "titleBackgroundColor": "#FFC86D",
@@ -80,8 +80,8 @@
       "id": 8,
       "category": "Food",
       "image":"https://i.ibb.co/8bq7RZZ/Rectangle-4287-2.png",
-      "title": "Food Donation 2",
-      "description": "Support food banks in your community.",
+
+      "title": "Support food banks in your community.",
       "price": 14.99,
       "titleColor": "#238636",
       "titleBackgroundColor": "#61C878",

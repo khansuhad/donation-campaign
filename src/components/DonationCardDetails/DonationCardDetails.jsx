@@ -11,17 +11,42 @@ const DonationCardDetails = () => {
        const donationData = dataLoad?.find(item => item?.id === Number(id?.donationId));
        setData(donationData);
     },[id,dataLoad]);
-    console.log(data)
+    // console.log(data?.titleColor)
+    const donateColor = data?.titleColor ;
+
+    const handleAddToDonation = () => {
+        const addedDonationArray = [];
+        const donationItem = JSON.parse(localStorage.getItem("donation"));
+        if(!donationItem){
+            addedDonationArray.push(data);
+            localStorage.setItem("donation", JSON.stringify(addedDonationArray));
+            alert("Good job!", "Successfully add to favorite", "success");
+        }
+        else{
+            const have = donationItem.find(e=> e.id === Number(data?.donationId))
+            if(!have){
+                addedDonationArray.push(...donationItem, data)
+                localStorage.setItem("donation", JSON.stringify(addedDonationArray))
+                alert("Good job!", "Successfully add to favorite", "success");
+            }
+            else{
+                alert("Error!", "Already added", "error");
+            }
+        }
+    }
+
     return (
-        <div className="px-[20%]">
-            <div>
-            <div className="hero flex flex-col-reverse justify-between" style={`${data?.image}`}>
-  <div className="hero-overlay bg-opacity-60 h-20 ">
-  <button className="btn btn-primary">Get Started</button>
-  </div>
- 
-</div>
+        <div className=" px-[10%] py-10  ">
+         <figure className="w-full h-full image-overlay-container">
+            <img src={data?.image} alt=""  className="w-full h-96"/>
+            <div className="overlay-content bg-black opacity-70 h-20 relative bottom-20">
+            
             </div>
+            <button className="btn border-none p-2 text-white rounded font-semibold relative bottom-36 left-6 " style={{backgroundColor:donateColor}} onClick={handleAddToDonation}>Donate ${data?.price}</button>
+         </figure>
+         <div>
+            <h1 className="font-bold text-3xl">{data?.title}</h1>
+         </div>
         </div>
     );
 };
