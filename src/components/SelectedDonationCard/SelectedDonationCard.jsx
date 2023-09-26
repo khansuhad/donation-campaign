@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const SelectedDonationCard = ({card}) => {
     // console.log(card)
     const {id , title, image,cardBackgroundColor,titleBackgroundColor,titleColor,price,category} = card;
+    console.log(id)
     return (
         <div className="flex rounded h-60" style={{backgroundColor:cardBackgroundColor}}>
            

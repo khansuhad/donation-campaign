@@ -10,31 +10,37 @@ import Home from './components/Home/Home'
 import HomeDonationCard from './components/HomeDonationCard/HomeDonationCard'
 import DonationCardDetails from './components/DonationCardDetails/DonationCardDetails'
 import SelectedDonationCards from './components/SelectedDonationCards/SelectedDonationCards'
+import ErrorPage from './components/ErrorPage/ErrorPage'
 
 const router = createBrowserRouter([
 
   {
     path:'/',
     element:<Main></Main>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
           path:'/',
           loader:() => fetch('donation.json'),
-          element:<Home></Home>
+          element:<Home></Home>,
+          
       },
       {
         path:'/donation',
-        element:<SelectedDonationCards></SelectedDonationCards>
+        element:<SelectedDonationCards></SelectedDonationCards>,
+       
       },
       {
         path:'/statistics',
         loader:() => fetch('donation.json'),
-        element:<Statistics></Statistics>
+        element:<Statistics></Statistics>,
+       
       },
       {
         path:'/:donationId',
         loader:() => fetch('donation.json'),
-        element:<DonationCardDetails></DonationCardDetails>
+        element:<DonationCardDetails></DonationCardDetails>,
+       
       }
     ]
   
