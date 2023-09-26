@@ -10,30 +10,10 @@
       "titleBackgroundColor": "#0052ff33",
       "cardBackgroundColor": "#0052ff26"
     },
+  
+ 
     {
       "id": 2,
-      "category": "Health",
-      "image":"https://i.ibb.co/frN1jYh/Rectangle-4284.png",
-      "description":"Join us in advancing healthcare and improving lives through your generous support. Your donation will drive groundbreaking medical research, fostering innovation, and paving the way for a healthier future for all. Together, we can make a lasting impact on the field of medicine and create a brighter tomorrow for patients worldwide.",
-      "title": "Support medical research for a better future",
-      "price": 24.99,
-      "titleColor": "#0052FF",
-      "titleBackgroundColor": "#0052ff33",
-      "cardBackgroundColor": "#0052ff26"
-    },
-    {
-      "id": 12,
-      "category": "Health",
-      "image":"https://i.ibb.co/frN1jYh/Rectangle-4284.png",
-      "description":"Help provide safe drinking water for children in need. Your donation will support clean water projects, ensuring that young lives are protected from waterborne diseases and contamination. Join us in making a difference today and giving children a healthier and brighter future.",
-      "title": "Safe drinking water for children",
-      "price": 24.99,
-      "titleColor": "#0052FF",
-      "titleBackgroundColor": "#0052ff33",
-      "cardBackgroundColor": "#0052ff26"
-    },
-    {
-      "id": 3,
       "category": "Education",
       "image":"https://i.ibb.co/gr5bFgf/Rectangle-4287-1.png",
       "description":"Support our mission to empower the next generation through education. Your donation helps provide access to quality education, enabling young minds to learn, grow, and thrive. Together, we can create brighter futures and opportunities for children and students, giving them the tools they need to succeed. Join us in making a lasting impact today.",
@@ -43,30 +23,10 @@
       "titleBackgroundColor": "#ff444a33",
       "cardBackgroundColor": "#ff444a26"
     },
+
+ 
     {
-      "id": 4,
-      "category": "Education",
-      "image":"https://i.ibb.co/gr5bFgf/Rectangle-4287-1.png",
-      "description":"Your contribution to 'Good Education' empowers young minds to reach their full potential. Your support provides essential learning resources, scholarships, and quality education opportunities. Together, we're building a brighter future for the leaders and innovators of tomorrow. Join us in making education accessible to all",
-      "title": "Good Education",
-      "price": 49.99,
-      "titleColor": "#FF444A",
-      "titleBackgroundColor": "#ff444a33",
-      "cardBackgroundColor": "#ff444a26"
-    },
-    {
-      "id": 11,
-      "category": "Education",
-      "image":"https://i.ibb.co/gr5bFgf/Rectangle-4287-1.png",
-      "description":"Help us empower deserving students by contributing to our scholarship fund. Your donation provides access to education and bright futures for talented individuals facing financial barriers. Join us in making dreams come true through education. Support our scholarship program today!",
-      "title": "Provide scholarships for deserving students",
-      "price": 49.99,
-      "titleColor": "#FF444A",
-      "titleBackgroundColor": "#ff444a33",
-      "cardBackgroundColor": "#ff444a26"
-    },
-    {
-      "id": 5,
+      "id": 3,
       "image":"https://i.ibb.co/41j8dL4/Rectangle-4287.png",
       "category": "Clothing",
       "description":"As the colder months approach, many individuals and families require warm clothing to stay comfortable and safe. This category can include coats, sweaters, hats, gloves, and scarves suitable for the winter season.",
@@ -75,6 +35,28 @@
       "titleColor": "#79C23F",
       "titleBackgroundColor": "#79c23f33",
       "cardBackgroundColor": "#79c23f26"
+    },
+    {
+      "id": 4,
+      "category": "Food",
+      "image":"https://i.ibb.co/8bq7RZZ/Rectangle-4287-2.png",
+      "description":"Join us in our mission to combat hunger. Your donation helps provide meals to those in need. Together, we can make a difference and ensure that no one goes hungry in our community. Give today to help us feed the hungry and make a positive impact.",
+      "title": "Help provide meals for the hungry",
+      "price": 12.99,
+      "titleColor": "#F87147",
+      "titleBackgroundColor": "#f8714733",
+      "cardBackgroundColor": "#f8714726"
+    },
+    {
+      "id": 5,
+      "category": "Food",
+      "image":"https://i.ibb.co/8bq7RZZ/Rectangle-4287-2.png",
+      "description":"Create emergency food kits with a mix of non-perishable items, bottled water, and other essentials. These kits are particularly useful for disaster relief efforts and for individuals or families facing immediate food shortages.",
+      "title": "Emergency Food Kit Donation",
+      "price": 14.99,
+      "titleColor": "#F87147",
+      "titleBackgroundColor": "#f8714733",
+      "cardBackgroundColor": "#f8714726"
     },
     {
       "id": 6,
@@ -89,6 +71,50 @@
     },
     {
       "id": 7,
+      "category": "Education",
+      "image":"https://i.ibb.co/gr5bFgf/Rectangle-4287-1.png",
+      "description":"Your contribution to 'Good Education' empowers young minds to reach their full potential. Your support provides essential learning resources, scholarships, and quality education opportunities. Together, we're building a brighter future for the leaders and innovators of tomorrow. Join us in making education accessible to all",
+      "title": "Good Education",
+      "price": 49.99,
+      "titleColor": "#FF444A",
+      "titleBackgroundColor": "#ff444a33",
+      "cardBackgroundColor": "#ff444a26"
+    },
+    {
+      "id": 8,
+      "category": "Health",
+      "image":"https://i.ibb.co/frN1jYh/Rectangle-4284.png",
+      "description":"Join us in advancing healthcare and improving lives through your generous support. Your donation will drive groundbreaking medical research, fostering innovation, and paving the way for a healthier future for all. Together, we can make a lasting impact on the field of medicine and create a brighter tomorrow for patients worldwide.",
+      "title": "Support medical research for a better future",
+      "price": 24.99,
+      "titleColor": "#0052FF",
+      "titleBackgroundColor": "#0052ff33",
+      "cardBackgroundColor": "#0052ff26"
+    },
+    {
+      "id": 9,
+      "category": "Health",
+      "image":"https://i.ibb.co/frN1jYh/Rectangle-4284.png",
+      "description":"Help provide safe drinking water for children in need. Your donation will support clean water projects, ensuring that young lives are protected from waterborne diseases and contamination. Join us in making a difference today and giving children a healthier and brighter future.",
+      "title": "Safe drinking water for children",
+      "price": 24.99,
+      "titleColor": "#0052FF",
+      "titleBackgroundColor": "#0052ff33",
+      "cardBackgroundColor": "#0052ff26"
+    },
+    {
+      "id": 10,
+      "category": "Education",
+      "image":"https://i.ibb.co/gr5bFgf/Rectangle-4287-1.png",
+      "description":"Help us empower deserving students by contributing to our scholarship fund. Your donation provides access to education and bright futures for talented individuals facing financial barriers. Join us in making dreams come true through education. Support our scholarship program today!",
+      "title": "Provide scholarships for deserving students",
+      "price": 49.99,
+      "titleColor": "#FF444A",
+      "titleBackgroundColor": "#ff444a33",
+      "cardBackgroundColor": "#ff444a26"
+    },
+    {
+      "id": 11,
       "category": "Clothing",
       "image":"https://i.ibb.co/41j8dL4/Rectangle-4287.png",
      "description":"Many homeless shelters are in constant need of clothing donations, including items like socks, underwear, t-shirts, and warm blankets. Donations in this category can provide essential clothing to those experiencing homelessness.",
@@ -98,30 +124,9 @@
       "titleBackgroundColor": "#79c23f33",
       "cardBackgroundColor": "#79c23f26"
     },
+    
     {
-      "id": 10,
-      "category": "Food",
-      "image":"https://i.ibb.co/8bq7RZZ/Rectangle-4287-2.png",
-      "description":"Join us in our mission to combat hunger. Your donation helps provide meals to those in need. Together, we can make a difference and ensure that no one goes hungry in our community. Give today to help us feed the hungry and make a positive impact.",
-      "title": "Help provide meals for the hungry",
-      "price": 12.99,
-      "titleColor": "#F87147",
-      "titleBackgroundColor": "#f8714733",
-      "cardBackgroundColor": "#f8714726"
-    },
-    {
-      "id": 8,
-      "category": "Food",
-      "image":"https://i.ibb.co/8bq7RZZ/Rectangle-4287-2.png",
-      "description":"Create emergency food kits with a mix of non-perishable items, bottled water, and other essentials. These kits are particularly useful for disaster relief efforts and for individuals or families facing immediate food shortages.",
-      "title": "Emergency Food Kit Donation",
-      "price": 14.99,
-      "titleColor": "#F87147",
-      "titleBackgroundColor": "#f8714733",
-      "cardBackgroundColor": "#f8714726"
-    },
-    {
-      "id": 9,
+      "id": 12,
       "category": "Food",
       "image":"https://i.ibb.co/8bq7RZZ/Rectangle-4287-2.png",
       "description":"Fresh fruits and vegetables are essential for a balanced diet. Donating fresh produce helps provide nutritious options to those in need. Consider specifying the types of fruits and vegetables you're donating if possible",
