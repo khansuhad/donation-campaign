@@ -53,7 +53,7 @@ const Statistics = () => {
       };
       
     return (
-        <div className="w-96 lg:w-[30%] flex justify-center items-center text-center mx-auto">
+        <div className="w-96 lg:w-[30%] flex justify-center items-center text-center mx-auto mt-20">
            
         <Pie data={data} options={options}></Pie>
         </div>

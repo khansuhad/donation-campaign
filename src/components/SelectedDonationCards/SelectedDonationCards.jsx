@@ -20,7 +20,7 @@ const SelectedDonationCards = () => {
      
     return (
         <div>
-               <div className="grid grid-cols-1  lg:grid-cols-2 gap-5 px-[10%] pb-10">
+               <div className="grid grid-cols-1  lg:grid-cols-2 gap-5 lg:px-[10%] px-5 md:px-10 pb-10 my-10">
                         {
                             donationCard?.slice(0, !showAll ? donationCard.length : 4).map((card,i)=> <SelectedDonationCard key={i} card={card}></SelectedDonationCard>
                                

@@ -1,20 +1,23 @@
-
-import { Link } from 'react-router-dom';
+import React from 'react';
 import image from '../../assets/logo.png'
+import { NavLink } from 'react-router-dom';
+import './nav.css';
 
 const Nav = () => {
     return (
-        <div >
-            <div className=' flex justify-between px-[10%] py-32'>
-            <img src={image} />
-            <div className='flex gap-5 text-2xl font-semiblod'>
-                <Link to='/'>Home</Link>
-                <Link to='/donation'>Donation</Link>
-                <Link to='/statistics'>Statistics</Link>
-                
+        <nav>
+               <div className='flex flex-col lg:flex-row lg:justify-between justify-center gap-5 items-center px-[10%] pt-10'>
+            <div className=''>
+            <img src={image} className=''/>
+            </div>
+            <div className='flex gap-5 text-2xl font-semibold'>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/donation'>Donation</NavLink>
+                <NavLink to='/statistics'>Statistics</NavLink>
+               
             </div>
             </div>
-        </div>
+        </nav>
     );
 };
 

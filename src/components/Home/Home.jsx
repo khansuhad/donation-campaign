@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import HomeDonationCard from "../HomeDonationCard/HomeDonationCard";
 import { useEffect, useState } from "react";
+import image from '../../assets/Clothing.png'
 
 const Home = () => {
    const donationdata = useLoaderData();
@@ -37,20 +38,20 @@ console.log(isSearchClicked)
   },[searchQuery])
     return (
         <div>
-          
-            <div className=" flex flex-col justify-center items-center text-center py-40 mb-20">
+      
+            <div className=" flex flex-col justify-center items-center text-center lg:py-20 mb-20" >
                 <div>
-                <h1 className="text-[#0B0B0B] font-bold text-5xl my-10">I Grow By Helping People In Need</h1>
+                <h1 className="text-[#0B0B0B] font-bold text-3xl md:text-5xl lg:text-5xl my-10 px-[10%]">I Grow By Helping People In Need</h1>
                 </div>
             <div className="form-control">
   <div className="input-group">
-    <input type="text" placeholder="Search here…" className="input input-bordered w-96" onChange={(e) => setSearchQuery(e.target.value)} />
+    <input type="text" placeholder="Search here…" className="input input-bordered md:w-96 lg:w-96" onChange={(e) => setSearchQuery(e.target.value)} />
     <button className="btn btn-square px-10 bg-[#FF444A] text-white" onClick={() => handleSearch() }>Search
     </button>
   </div>
 </div>
             </div>
-            <div className="grid grid-cols-4 gap-5 px-[10%]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-[10%]">
             {
             filteredDonations.map((data) => (
               <HomeDonationCard donationData={data} key={data.id} />
