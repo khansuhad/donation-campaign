@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import SelectedDonationCard from "../SelectedDonationCard/SelectedDonationCard";
+import { ToastContainer,toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const DonationCardDetails = () => {
     const dataLoad = useLoaderData();
@@ -23,7 +25,17 @@ const DonationCardDetails = () => {
         if(!donationItem){
             addedDonationArray.push(data);
             localStorage.setItem("donation", JSON.stringify(addedDonationArray));
-            alert("Good job!", "Successfully add to favorite", "success");
+            
+            toast.success(`Added successfully `, {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                });
         }
         else{
         
@@ -32,18 +44,38 @@ const DonationCardDetails = () => {
             if(!have){
                 addedDonationArray.push(...donationItem, data)
                 localStorage.setItem("donation", JSON.stringify(addedDonationArray))
-                alert("dukse job!", "Successfully add to favorite", "success");
+                toast.success("Successfully added", {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    });
                 
             }
             else{
-                alert("Error!", "Already added", "error");
+                
+                toast.error("Already added", {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    });
             }
         }
         
     }
    
     return (
-        <div className=" px-[10%] py-10  ">
+        <div>
+            <div className=" px-[10%] py-10  ">
          <figure className="w-full h-full image-overlay-container">
             <img src={data?.image} alt=""  className="w-full h-96"/>
             <div className="overlay-content bg-black opacity-70 h-20 relative bottom-20">
@@ -55,6 +87,9 @@ const DonationCardDetails = () => {
             <h1 className="font-bold text-3xl">{data?.title}</h1>
             <p className="mt-10 text-3xl font-normal flex justify-center">{data?.description}</p>
          </div>
+         
+        </div>
+        <ToastContainer />
         </div>
     );
 };

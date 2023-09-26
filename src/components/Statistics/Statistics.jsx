@@ -37,6 +37,7 @@ const Statistics = () => {
       const options = {
         plugins: {
           legend: {
+           
             display: true,
             position: "bottom",
           },
