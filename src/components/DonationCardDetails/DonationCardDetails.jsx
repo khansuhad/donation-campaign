@@ -53,7 +53,7 @@ const DonationCardDetails = () => {
          </figure>
          <div>
             <h1 className="font-bold text-3xl">{data?.title}</h1>
-            
+            <p className="mt-10 text-3xl font-normal flex justify-center">{data?.description}</p>
          </div>
         </div>
     );
