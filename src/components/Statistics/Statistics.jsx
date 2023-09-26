@@ -25,7 +25,7 @@ const Statistics = () => {
      const  totalDonationData = donationCard.length ;
     const  donationPercentage = ((totalDonationData / totalHomeData) * 100).toFixed(2);
     const data = {
-        labels: ["Donation Data", "Remaining Data"],
+        labels: ["Your Donations", "Total Donations"],
         datasets: [
           {
             data: [donationPercentage, 100 - donationPercentage ],
