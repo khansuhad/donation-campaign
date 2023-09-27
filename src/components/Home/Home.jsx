@@ -45,7 +45,7 @@ console.log(isSearchClicked)
     <div className="form-control text-center ">
     <h1 className="text-[#0B0B0B] font-bold text-3xl md:text-5xl lg:text-5xl my-10 ">I Grow By Helping People In Need</h1>
   <div className="input-group flex justify-center  ">
-    <input type="text" placeholder="Search here…" className="input input-bordered md:w-96 lg:w-96" onChange={(e) => setSearchQuery(e.target.value)} />
+    <input type="text" placeholder="Search here…" className="input input-bordered md:w-96 lg:w-96 text-black" onChange={(e) => setSearchQuery(e.target.value)} />
     <button className="btn btn-square px-10 bg-[#FF444A] text-white" onClick={() => handleSearch() }>Search
     </button>
   </div>
