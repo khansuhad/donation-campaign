@@ -1,41 +1,20 @@
 import { useLoaderData } from "react-router-dom";
 import HomeDonationCard from "../HomeDonationCard/HomeDonationCard";
 import { useEffect, useState } from "react";
-import image from '../../assets/Clothing.png'
+
 
 const Home = () => {
-   const donationdata = useLoaderData();
-
-   const [searchQuery, setSearchQuery] = useState("");
-  const [filteredDonations, setFilteredDonations] = useState([]);
-  const [isSearchClicked , setIsSearchClicked] = useState(false)
-
- const handleSearch = () =>{
-    setIsSearchClicked(true);
    
- }
 
- useEffect( () => {
+  const donationData = useLoaderData();
+  console.log(donationData)
+  const [filterData,setFilterData] = useState(donationData)
   
-console.log(isSearchClicked)
-    if(isSearchClicked){
-       
-              const filtered = donationdata.filter((data) =>
-                data.category.toLowerCase().includes(searchQuery.toLowerCase())
-              );
-              setFilteredDonations(filtered);
-             
-         
-    }
- else if(searchQuery.trim() === "") {
-    setFilteredDonations(donationdata)
- };
- 
-  },[searchQuery,donationdata,isSearchClicked]);
-     
-  useEffect(() => {
-        setIsSearchClicked(false)
-  },[searchQuery])
+  const handleSearch = () =>{
+    const search = donationData?.filter((item) => item?.category?.toLowerCase()?.trim()?.includes(searchQuery?.toLowerCase()?.trim()) );
+    setFilterData(search);
+   
+ } 
     return (
         <div>
       <div className="hero  my-10 " style={{backgroundImage: 'url(https://i.ibb.co/41j8dL4/Rectangle-4287.png)'}}>
@@ -61,7 +40,7 @@ console.log(isSearchClicked)
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-[10%]">
             {
-            filteredDonations?.map((data) => (
+            filterData?.map((data) => (
               <HomeDonationCard donationData={data} key={data.id} />
             ))
             }
