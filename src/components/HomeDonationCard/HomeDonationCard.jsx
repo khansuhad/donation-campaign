@@ -15,7 +15,7 @@ const HomeDonationCard = ({ donationData }) => {
 
   return (
   
-   <Link to={`/${id}`}
+   <Link to={`/details/${id}`}
         className={`card shadow-xl mb-10`} style={{backgroundColor:cardBackgroundColor}}
       >
         <figure className="h-52 ">

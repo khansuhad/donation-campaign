@@ -16,7 +16,7 @@ const SelectedDonationCard = ({card}) => {
           <p className=" md:text-2xl font-bold text-black my-2" >{title}</p>
           <p className="font-bold lg:text-lg my-2" style={{color:titleColor}}>${price}</p>
         <div className=" mt-6 lg:my-5 pb-2">
-            <Link to={`/${id}`} className=" rounded font-bold relative bottom-3  md:text-2xl text-white p-2 w-fit" style={{backgroundColor:titleColor}}>VIEW DETAILS</Link>
+            <Link to={`/details/${id}`} className=" rounded font-bold relative bottom-3  md:text-2xl text-white p-2 w-fit" style={{backgroundColor:titleColor}}>VIEW DETAILS</Link>
         </div>
             
             </div>

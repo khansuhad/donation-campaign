@@ -48,7 +48,7 @@ const renderCustomizedLabel = ({
     );
 };
     return (
-      <div className='my-20'>
+      <div className='my-20 w-[100%] mx-auto'>
         <ResponsiveContainer width="100%" height={400}>
       <PieChart>
           <Pie
