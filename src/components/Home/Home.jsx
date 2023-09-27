@@ -7,7 +7,7 @@ const Home = () => {
    
 
   const donationData = useLoaderData();
-  console.log(donationData)
+  const [searchQuery,setSearchQuery] = useState("");
   const [filterData,setFilterData] = useState(donationData)
   
   const handleSearch = () =>{
